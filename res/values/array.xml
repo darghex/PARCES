@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="filtroEstudiantes">
+        <item>Nombres </item>
+        <item>Programa</item>
+        <item>Identificación </item>
+        <item>Promedio académico menor igual </item>
+        <item>Promedio académico mayor igual </item>
+
+    </string-array>
+
+</resources>

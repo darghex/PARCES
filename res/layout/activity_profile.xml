@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    style="@style/body">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        >
+        <!--  Header  Starts-->
+        <include layout="@layout/header"/>
+        <!--  Header Ends -->
+
+
+        <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/titleBar">
+
+            <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Mi Tutor"
+                style="@style/title"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            >
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="20dp">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/photo"
+                    android:src="@drawable/no_image_available" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="NAME"
+                    android:textColor="#ff29549f"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:textIsSelectable="false"
+                    android:textStyle="bold"
+                    android:id="@+id/txtNombre"
+                    android:paddingBottom="20dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Teléfono: "
+                android:textSize="15dp"
+                android:textColor="#ff83848a"
+                android:id="@+id/txtTelefono"
+                android:gravity="center_vertical"
+                android:paddingRight="15dp"
+
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgcall"
+                android:src="@drawable/call"
+                android:background="?android:selectableItemBackground"
+                android:onClick="onCall"
+
+                />
+
+             <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imgsms"
+                    android:src="@drawable/sms"
+                 android:background="?android:selectableItemBackground"
+                    android:onClick="onSMS" />
+                
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Email"
+                android:textSize="15dp"
+                android:textColor="#ff83848a"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/txtEmail"
+                android:gravity="center_vertical"
+                android:paddingRight="15dp"
+                />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?android:selectableItemBackground"
+                    android:id="@+id/imgmail"
+                    android:src="@drawable/email"
+                    android:onClick="onMail" />
+
+              </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

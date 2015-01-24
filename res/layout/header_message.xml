@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/header"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@layout/header_bg"
+    android:paddingBottom="0dip"
+    >
+    <!-- Logo Start-->
+    <ImageView android:src="@drawable/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="7dp"
+        android:onClick="onBack"
+        android:background="?android:selectableItemBackground"
+
+        />
+    
+    <ImageView android:src="@drawable/parces_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:onClick="onHome"
+        android:background="?android:selectableItemBackground"
+        />
+
+    <!-- Logo Ends -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:gravity="right">
+
+
+        />
+
+    <ImageView android:src="@drawable/detail"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:padding="5dp"
+        android:onClick="onDetail"
+        android:background="?android:selectableItemBackground"
+
+        />
+
+    <ImageView android:src="@drawable/close"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:padding="5dp"
+        android:onClick="onClose"
+        android:background="?android:selectableItemBackground"
+
+        />
+    </LinearLayout>
+</LinearLayout>
