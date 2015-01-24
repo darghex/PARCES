@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:fillViewport="true">
+  <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:background="#f8f9fe">
+
+
+
+        <!-- Footer Start -->
+      <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+          android:id="@+id/footer"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_alignParentBottom="true"
+          android:gravity="center"
+          android:orientation="horizontal">
+
+          <TextView
+              android:id="@+id/txtMessage"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginBottom="20dip"
+              android:layout_marginTop="20dip"
+              android:gravity="center"
+              android:text="Ingrese con los datos de la plataforma Institucional"
+              android:textColor="#D93A2B"
+              android:textSize="14dip" />
+               />
+
+      </LinearLayout>
+        <!-- Footer Ends -->
+
+        <!-- Body Start -->
+
+        <LinearLayout 
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/header"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:id="@+id/id_login"
+            android:weightSum="1">
+
+      <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+          android:orientation="vertical"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          android:paddingTop="20dp"
+          >
+
+
+             <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/img_ies"
+                android:src="@drawable/no_image_available" />
+
+             <TextView
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:text="PARCES PROFILE"
+              android:textColor="#ff29549f"
+              android:gravity="center"
+                 android:textSize="20dp"
+                 android:textIsSelectable="false"
+                 android:textStyle="bold"
+                 android:id="@+id/txtProfile" />
+
+      </LinearLayout>
+
+            <TextView
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:text="Usuario"
+              style="@style/body" />
+
+          <EditText android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:layout_marginBottom="20dip"
+                android:singleLine="true"
+              android:id="@+id/txtUser" />
+
+          <TextView
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:text="Contraseña"
+              style="@style/body" />
+
+          <EditText android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:singleLine="true"
+                android:password="true"
+              android:id="@+id/txtPassword" />
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Programa"
+                style="@style/body"
+                android:visibility="visible"
+                android:id="@+id/txt_programa" />
+
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/lst_programas"
+                android:layout_weight="0.28"
+                android:spinnerMode="dropdown" />
+
+            <Button
+              android:id="@+id/btnLogin"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="10dip"
+              android:text="Ingresar"
+
+              />
+
+          <!-- Link to Registration Screen -->
+        </LinearLayout>
+        <!-- Body Ends -->
+  </RelativeLayout>
+</ScrollView>
